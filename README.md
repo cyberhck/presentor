@@ -33,7 +33,7 @@ directory.
 
 ```
 cd presentation/reveal.js
-git clone https://github.com/hakimel/reveal.js.git .
+git clone https://github.com/hakimel/reveal.js.git . --depth 1
 ```
 
 This will clone reveal.js presentation in your reveal.js directory, now open index.html and include two JavaScript files inside ```<head>``` 
