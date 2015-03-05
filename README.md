@@ -48,17 +48,17 @@ cp ../../presentor.js presentation/reveal.js/presentor.js
 ### Steps for automatic installation.
 ### Via Wget
 ```
-curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh
+curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh && cd presentor/presentation/reveal.js
 ```
 ### Via Curl
 ```
-wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh
+wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh && cd presentor/presentation/reveal.js
 ```
 ### To this step, you have installed presentor and cloned reveal.js
 
 ## Using presentor
 
-Open index.html which is inside reveal.js directory, include two JavaScript files inside ```<head>``` 
+Open index.html if you which is inside reveal.js directory, include two JavaScript files inside ```<head>``` 
 tag like this:
 ```
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
