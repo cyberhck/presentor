@@ -58,7 +58,7 @@ wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O
 
 ## Using presentor
 
-Open index.html if you which is inside reveal.js directory, include two JavaScript files inside ```<head>``` 
+Open index.html with any editor, include two JavaScript files inside ```<head>``` 
 tag like this:
 ```
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
