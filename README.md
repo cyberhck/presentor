@@ -39,7 +39,7 @@ git clone https://github.com/hakimel/reveal.js.git . --depth 1
 This will clone reveal.js presentation in your reveal.js directory, now open index.html and include two JavaScript files inside ```<head>``` 
 tag like this:
 ```
-<script type="text/javascript" src="/socket.io.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="presentor.js"></script>
 ```
 Now, move presentor.js file from presentor directory to reveal.js directory. To do so, come back to root directory of presentor by executing so:
