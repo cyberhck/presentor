@@ -32,7 +32,7 @@ Navigate to presentation directory inside presentor directory, then enter inside
 directory.
 
 ```
-cd presentor/presentation/reveal.js
+cd presentation/reveal.js
 git clone https://github.com/hakimel/reveal.js.git .
 ```
 
