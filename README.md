@@ -6,7 +6,7 @@ assuming a reveal.js user and lover, I'm assuming you know few basics and can tr
 
 ## Getting started
 
-### How?
+### How? Manual Way!
 
 Just execute the following commands:
 
@@ -33,24 +33,40 @@ directory.
 
 ```
 cd presentation/reveal.js
+rm .tempFile
 git clone https://github.com/hakimel/reveal.js.git . --depth 1
 ```
 
-This will clone reveal.js presentation in your reveal.js directory, now open index.html and include two JavaScript files inside ```<head>``` 
+This will clone reveal.js presentation in your reveal.js directory,
+
+execute the following command:
+```
+cp ../../presentor.js presentation/reveal.js/presentor.js
+```
+
+## These above steps can be replaced by automatic installer
+### Steps for automatic installation.
+### Via Wget
+```
+curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh
+```
+### Via Curl
+```
+wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh
+```
+### To this step, you have installed presentor and cloned reveal.js
+
+## Using presentor
+
+Open index.html and include two JavaScript files inside ```<head>``` 
 tag like this:
 ```
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="presentor.js"></script>
 ```
-Now, move presentor.js file from presentor directory to reveal.js directory. To do so, come back to root directory of presentor by executing so:
-```
-cd ..
-cd ..
-```
-then execute the following command:
-```
-cp presentor.js presentation/reveal.js/presentor.js
-```
+
+You should be ready to deploy now, just edit index.html file inside this directory, then come back to root of presentor by executing ```cd ../..``` command.
+
 Now, everything should be done, come to presentor installation directory and prepare for next step:
 
 ## Executing server:
