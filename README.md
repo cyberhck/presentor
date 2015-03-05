@@ -79,6 +79,9 @@ feature on caution as it drains battery.
 After presentation is over, just turn off the wake lock switch or kill the application from recent application items, this will turn off wake 
 lock.
 
+### Wait, there is reveal.js slides, but where is my presentation?
+Well, you've just cloned reveal.js inside reveal.js directory, so now you need to edit that index.html and create your slides, or you can just copy and paste it in index.html if you want.
+
 ## Support for other presentation clients.
 For now, there is support only for revela.js, but I'm trying to impress.js too. It will never support any Microsoft's presentation client like 
 PowerPoint. In near future, I may add support for Libre Impress but that isn't a guarantee. But I promise to bring impress.js support in near 
