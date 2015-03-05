@@ -42,8 +42,12 @@ tag like this:
 <script type="text/javascript" src="/socket.io.js"></script>
 <script type="text/javascript" src="presentor.js"></script>
 ```
-Now, move presentor.js file from presentor directory to reveal.js directory. To do so, come back to root directory of presentor then execute 
-the following command:
+Now, move presentor.js file from presentor directory to reveal.js directory. To do so, come back to root directory of presentor by executing so:
+```
+cd ..
+cd..
+```
+then execute the following command:
 ```
 cp presentor.js presentation/reveal.js/presentor.js
 ```
