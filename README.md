@@ -10,7 +10,7 @@ assuming a reveal.js user and lover, I'm assuming you know few basics and can tr
 
 Just execute the following commands:
 
-Assuming you have installed git and node.js installed already.
+Assuming you have installed git and node.js already.
 
 Cloning this repository:
 ```
@@ -45,7 +45,7 @@ tag like this:
 Now, move presentor.js file from presentor directory to reveal.js directory. To do so, come back to root directory of presentor by executing so:
 ```
 cd ..
-cd..
+cd ..
 ```
 then execute the following command:
 ```
