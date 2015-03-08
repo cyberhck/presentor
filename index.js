@@ -6,15 +6,15 @@ var http = require("http")
 var express = require("express");
 app = express();
 server = http.createServer(app);
-app.use(express.static(__dirname + '/presentation/reveal.js/'));
+app.use(express.static(__dirname + '/presentation/'));
 server.listen(3000);
 app.get("/", function(req, res) {
-	res.sendfile('presentation/reveal.js/index.html');
+	res.sendfile('presentation/index.html');
 });
 
 app.get("/server", function(req, res) {
 	console.log("server connected!");
-	res.sendfile('presentation/reveal.js/index.html');
+	res.sendfile('presentation/index.html');
 });
 
 app.get("/client", function(req, res) {

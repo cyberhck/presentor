@@ -7,11 +7,11 @@ pwd
 sleep 1
 echo "Executing npm install"
 npm install
-echo "removing .tempFile from reveal"
-rm presentation/reveal.js/.tempFile
+echo "removing .tempFile from presentation"
+rm presentation/.tempFile
 echo "cloning reveal.js"
 sleep 1
-git clone https://github.com/hakimel/reveal.js.git presentation/reveal.js --depth 1
+git clone https://github.com/hakimel/reveal.js.git presentation --depth 1
 echo "copying presentor.js inside respective directory"
-cp presentor.js presentation/reveal.js/presentor.js
+cp presentor.js presentation/presentor.js
 echo "Done!"
