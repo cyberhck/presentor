@@ -16,7 +16,7 @@ app.get("/server", function(req, res) {
 
 app.get("/client", function(req, res) {
 	console.log("client connected!");
-	res.sendfile('index.html');
+	res.end('support ended for the path client');
 });
 
 io = require('socket.io').listen(server);
@@ -38,6 +38,7 @@ app.get("/next/:password", function(req, res) {
 		io.sockets.emit('chat','next');
 		res.end("next!");
 	}else{
+		res.end("inv");
 		console.log("Password Incorrect");
 	}
 });
@@ -48,6 +49,7 @@ app.get("/prev/:password", function(req, res) {
 		io.sockets.emit('chat','prev');
 		res.end("prev!");
 	}else{
+		res.end("inv");
 		console.log("Password Incorrect");
 	}
 });
@@ -58,5 +60,7 @@ app.get("/check/:password", function(req, res) {
 	if(req.params.password==password){
 		//io.sockets.emit('chat','check');
 		res.end("check");
+	}else{
+		res.end("inv");
 	}
 });
