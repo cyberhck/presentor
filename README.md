@@ -48,11 +48,11 @@ cp ../../presentor.js presentation/reveal.js/presentor.js
 ### Steps for automatic installation.
 ### Via Wget
 ```
-curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh && cd presentor/presentation/reveal.js
+wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh && cd presentor/presentation/reveal.js
 ```
 ### Via Curl
 ```
-wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh && cd presentor/presentation/reveal.js
+curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh && cd presentor/presentation/reveal.js
 ```
 ### To this step, you have installed presentor and cloned reveal.js
 
