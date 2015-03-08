@@ -2,18 +2,26 @@ var socket=io();
 socket.on('chat',function(data){
 	if(data=="next"){
 		console.log("Next");
-		if(Reveal){
+
+
+		if(typeof(Reveal)!="undefined"){
 			Reveal.next()
 		}
-		if(impress()){
+		if(typeof(impress())!="undefined"){
 			impress().next();
 		}
+
+
 	}else if(data=="prev"){
+		
+
 		console.log("Prev");
-		if(Reveal){
+		
+
+		if(typeof(Reveal)!="undefined"){
 			Reveal.prev();
 		}
-		if(impress()){
+		if(typeof(impress())!="undefined"){
 			impress().prev();
 		}
 	}
