@@ -5,7 +5,7 @@ sleep 1
 cd presentor
 pwd
 sleep 1
-echo "Execcuting npm install"
+echo "Executing npm install"
 npm install
 echo "removing .tempFile from reveal"
 rm presentation/reveal.js/.tempFile
