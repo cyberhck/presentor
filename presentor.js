@@ -2,10 +2,20 @@ var socket=io();
 socket.on('chat',function(data){
 	if(data=="next"){
 		console.log("Next");
-		Reveal.next()
+		if(Reveal){
+			Reveal.next()
+		}
+		if(impress()){
+			impress().next();
+		}
 	}else if(data=="prev"){
 		console.log("Prev");
-		Reveal.prev();
+		if(Reveal){
+			Reveal.prev();
+		}
+		if(impress()){
+			impress().prev();
+		}
 	}
 });
 
