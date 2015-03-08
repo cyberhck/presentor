@@ -1,8 +1,8 @@
 # Presentor (Wilreless Presentation Remote)
 
 This is an Android + Desktop application which enables wireless presentation right from your phone. Installation procedure is a bit 
-complicated, but this application is only for web based presentations like reveal.js and impress.js (this supports only reveal.js for now), 
-assuming a reveal.js user and lover, I'm assuming you know few basics and can troubleshoot few problems.
+complicated, but this application is only for web based presentations like reveal.js and impress.js (this supports only reveal.js and impress.js for now), 
+assuming a reveal.js or impress.js user and lover, I'm assuming you know few basics and can troubleshoot few problems.
 
 ## Getting started
 
@@ -28,50 +28,64 @@ While this may take a little while, it depends on speed of Internet connection. 
 shouldn't take long.
 
 ### Setting up presentation:
-Navigate to presentation directory inside presentor directory, then enter inside reveal.js directory. Then clone reveal.js repository in that 
-directory.
+Navigate to presentation directory inside presentor directory. Then clone reveal.js or impress.js repository in that directory after deleting .tempFile
 
+## For reveal.js
 ```
-cd presentation/reveal.js
+cd presentation
 rm .tempFile
 git clone https://github.com/hakimel/reveal.js.git . --depth 1
 ```
 
-This will clone reveal.js presentation in your reveal.js directory,
+This will clone reveal.js in presentation directory,
+
+## For impress.js
+```
+cd presentation
+rm .tempFile
+git clone https://github.com/bartaz/impress.js.git presentation --depth 1
+```
+This will clone impress.js in presentation directory
+
+Now we've to copy heart of presentor to presentation directory, to do so:
 
 execute the following command:
 ```
-cp ../../presentor.js presentation/reveal.js/presentor.js
+cp ../presentor.js presentation/presentor.js
 ```
 
 ## These above steps can be replaced by automatic installer
 ### Steps for automatic installation.
-### Via Wget
+### Via Wget installs reveal
 ```
-wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh -O - | sh && cd presentor/presentation/reveal.js
+wget https://raw.githubusercontent.com/cyberhck/presentor/master/installer-reveal.sh -O - | sh && cd presentor/presentation/
 ```
-### Via Curl
+### Via Curl installs impress
 ```
-curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer.sh | sh && cd presentor/presentation/reveal.js
+curl -L https://raw.githubusercontent.com/cyberhck/presentor/master/installer-impress.sh | sh && cd presentor/presentation/
 ```
-### To this step, you have installed presentor and cloned reveal.js
+### To this step, you have installed presentor and cloned either reveal.js or impress.js
+
+### You can just use the respective names, just replace impress.js or reveal.js in both curl or wget
 
 ## Using presentor
 
-Open index.html with any editor, include two JavaScript files inside ```<head>``` 
+Open index.html which is inside presentation directory with any editor, include two JavaScript files inside ```<head>``` 
 tag like this:
 ```
 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="presentor.js"></script>
 ```
 
-You should be ready to deploy now, just edit index.html file inside this directory, then come back to root of presentor by executing ```cd ../..``` command.
+
+You should be ready to deploy now, just edit index.html file inside this directory, then come back to root of presentor by executing ```cd ..``` command.
 
 Now, everything should be done, come to presentor installation directory and prepare for next step:
 
 ## Executing server:
 ```
 node index.js
+node index.js newpassword #for overriding default password
 ```
 
 
