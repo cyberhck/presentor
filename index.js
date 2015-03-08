@@ -1,4 +1,7 @@
 password="defaultpassword";
+if(process.argv[2]){
+	password=process.argv[2];
+}
 var http = require("http")
 var express = require("express");
 app = express();
