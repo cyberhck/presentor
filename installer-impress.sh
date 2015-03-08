@@ -9,7 +9,7 @@ echo "Executing npm install"
 npm install
 echo "removing .tempFile from presentation"
 rm presentation/.tempFile
-echo "cloning reveal.js"
+echo "cloning impress.js"
 sleep 1
 git clone https://github.com/bartaz/impress.js.git presentation --depth 1
 echo "copying presentor.js inside respective directory"
