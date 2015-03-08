@@ -31,19 +31,24 @@ io.sockets.on('connection', function(socket) {
 });
 
 app.get("/next/:password", function(req, res) {
-	console.log("next hit!");
+	
 	//console.log(req.params.password);
 	if(req.params.password==password){
+		console.log("Next Hit");
 		io.sockets.emit('chat','next');
 		res.end("next!");
+	}else{
+		console.log("Password Incorrect");
 	}
 });
 app.get("/prev/:password", function(req, res) {
-	console.log("prev hit!");
 	//console.log(req.params.password);
 	if(req.params.password==password){
+		console.log("Next Hit");
 		io.sockets.emit('chat','prev');
 		res.end("prev!");
+	}else{
+		console.log("Password Incorrect");
 	}
 });
 
