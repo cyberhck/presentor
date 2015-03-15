@@ -10,7 +10,7 @@ assuming a reveal.js or impress.js user and lover, I'm assuming you know few bas
 
 Just execute the following commands:
 
-Assuming you have installed git and node.js already.
+Assuming you have installed git and node.js already. (and node.js version >=0.8)
 
 Cloning this repository:
 ```
