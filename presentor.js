@@ -7,7 +7,7 @@ socket.on('chat',function(data){
 		if(typeof(Reveal)!="undefined"){
 			Reveal.next()
 		}
-		if(typeof(impress())!="undefined"){
+		if(typeof(impress)!="undefined"){
 			impress().next();
 		}
 
@@ -21,7 +21,7 @@ socket.on('chat',function(data){
 		if(typeof(Reveal)!="undefined"){
 			Reveal.prev();
 		}
-		if(typeof(impress())!="undefined"){
+		if(typeof(impress)!="undefined"){
 			impress().prev();
 		}
 	}
