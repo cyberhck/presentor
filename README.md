@@ -43,7 +43,7 @@ This will clone reveal.js in presentation directory,
 ```
 cd presentation
 rm .tempFile
-git clone https://github.com/bartaz/impress.js.git presentation --depth 1
+git clone https://github.com/bartaz/impress.js.git . --depth 1
 ```
 This will clone impress.js in presentation directory
 
