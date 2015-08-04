@@ -113,9 +113,8 @@ lock.
 Well, you've just cloned reveal.js inside reveal.js directory, so now you need to edit that index.html and create your slides, or you can just copy and paste it in index.html if you want.
 
 ## Support for other presentation clients.
-For now, there is support only for revela.js, but I'm trying to impress.js too. It will never support any Microsoft's presentation client like 
-PowerPoint. In near future, I may add support for Libre Impress but that isn't a guarantee. But I promise to bring impress.js support in near 
-future, if you don't like to wait, you can go ahead and help me on developing them, you can see contribution summary at the end of this page.
+For now, there is support only for reveal.js and impress.js. I'm not working on this project currently so any contributions will be appreciated. It will never support any Microsoft's presentation client like 
+PowerPoint. In near future, I may add support for Libre Impress but that isn't a guarantee. If you don't like to wait, you can go ahead and help me on developing them, you can see contribution summary at the end of this page.
 
 ### Licence (The boring stuff)
 This product is released under GNU GPL V3
