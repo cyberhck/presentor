@@ -10,7 +10,7 @@ assuming a reveal.js or impress.js user and lover, I'm assuming you know few bas
 
 Just execute the following commands:
 
-Assuming you have installed git and node.js already.
+Assuming you have installed git and node.js already. (and node.js version >=0.8)
 
 Cloning this repository:
 ```
@@ -43,7 +43,7 @@ This will clone reveal.js in presentation directory,
 ```
 cd presentation
 rm .tempFile
-git clone https://github.com/bartaz/impress.js.git presentation --depth 1
+git clone https://github.com/bartaz/impress.js.git . --depth 1
 ```
 This will clone impress.js in presentation directory
 
